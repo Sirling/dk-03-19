@@ -20,8 +20,7 @@ class Database:
         cursor = connect.cursor()
         try:
             cursor.execute(query)
-            result = cursor.fetchall()
-            print(result)
+            result = cursor.fetchall()                                                                                                                                                          
             result_list = list(sum(result, ()))
             print(result_list)
         except mysql.connector.Error as error:

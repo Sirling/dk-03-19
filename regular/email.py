@@ -9,7 +9,7 @@ def verification(list_input):
     result_list = list()
     for x in list_input:
         if isinstance(x, str):
-            match = re.search(r'[\w._+-]+@[\w._+-]+\.[\w]{1,11}', x)
+            match = re.match(r'[\w._+-]+@[\w._+-]+\.[\w]{1,11}', x)
             if match is not None:
                 result_list.append(match[0])
     return result_list
