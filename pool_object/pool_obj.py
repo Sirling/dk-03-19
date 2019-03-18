@@ -33,7 +33,7 @@ class DriversPool:
 class Driver:
 
     def __init__(self):
-        self.driver = webdriver.Chrome('C:/Work/Projects/DK-03-2019/drivers/chromedriver.exe')
+        self.driver = webdriver.Chrome('../drivers/chromedriver.exe')
         self.driver.get('about:blank')
 
     def close(self):
